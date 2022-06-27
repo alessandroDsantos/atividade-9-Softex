@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    //Declaração de um ponteiro.
+    int *ptr;
+    
+    //Utilizando o realloc dessa madeira, ele equivale a um malloc. ptr vai ter o tamanho de 22(de vetor).
+    ptr = (int *) realloc(NULL,22 * sizeof(int));
+    
+    //Limpa a memoria.
+    free(ptr);
+    
+    return 0;
+}
